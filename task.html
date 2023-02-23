@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>cards-view</title>
+    <link rel="stylesheet" href="./task.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="search-box">
+        <label for="search">Search:</label>
+        <input id="search" type="text" onkeyup="Search()" autocomplete="off" />
+      </div>
+
+      <div class="sort" name="sort">
+        <label for="drop-down">Sort:</label>
+        <select id="drop-down" onchange="Sort()">
+          <option value="none" hidden>Sort by...</option>
+          <option value="sort-by-name">Name</option>
+          <option value="sort-by-id">ID</option>
+        </select>
+      </div>
+
+      <ul class="emp-info-cards" id="emp-info-cards">
+        <li class="emp-card">
+          <div class="emp-info">
+            <p class="emp-name">John Glanton</p>
+            <p class="emp-role">Chief Executive</p>
+            <p class="emp-since">Employee Since 2008-01-15</p>
+          </div>
+          <div class="emp-org-id">
+            <p class="emp-id">8110923</p>
+          </div>
+        </li>
+
+        <li class="emp-card">
+          <div class="emp-info">
+            <p class="emp-name">Samuel Chamberlain</p>
+            <p class="emp-role">Sales</p>
+            <p class="emp-since">Employee Since 2012-05-01</p>
+          </div>
+          <div class="emp-org-id">
+            <p class="emp-id">7734981</p>
+          </div>
+        </li>
+
+        <li class="emp-card">
+          <div class="emp-info">
+            <p class="emp-name">Louis Toadvine</p>
+            <p class="emp-role">Customer Support</p>
+            <p class="emp-since">Employee Since 2011-08-24</p>
+          </div>
+          <div class="emp-org-id">
+            <p class="emp-id">3400981</p>
+          </div>
+        </li>
+
+        <li class="emp-card">
+          <div class="emp-info">
+            <p class="emp-name">Sree Mouli Chinta</p>
+            <p class="emp-role">Developer</p>
+            <p class="emp-since">Employee Since 2022-04-11</p>
+          </div>
+          <div class="emp-org-id">
+            <p class="emp-id">3082027</p>
+          </div>
+        </li>
+
+        <li class="emp-card">
+          <div class="emp-info">
+            <p class="emp-name">David Brown</p>
+            <p class="emp-role">Director of HR</p>
+            <p class="emp-since">Employee Since 2012-01-10</p>
+          </div>
+          <div class="emp-org-id">
+            <p class="emp-id">5517823</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <script src="./task.js"></script>
+  </body>
+</html>

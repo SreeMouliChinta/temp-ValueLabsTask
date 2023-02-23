@@ -1,0 +1,49 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  height: 100vh;
+  font-size: 1.6rem;
+  font-family: "Poppins", sans-serif;
+  display: absolute;
+}
+
+.container {
+  margin: 0 auto;
+  padding-top: 7.5rem;
+  width: 32rem;
+}
+
+.emp-card {
+  display: flex;
+  gap: 4.2rem;
+  justify-content: space-between;
+  margin: 1.2rem 0;
+  border: 1px solid black;
+  padding: 3.2px;
+}
+
+.emp-info {
+  line-height: 1.4;
+}
+
+.emp-name {
+  font-size: 1.8rem;
+}
+
+.emp-since {
+  font-size: 1.2rem;
+}
+
+.emp-id {
+  color: green;
+}
